@@ -1,0 +1,6 @@
+Now that it’s possible to sort numbers, it's time to implement the same functionality for words and lines. But that's not all for this stage! Let's also add a new sorting type that is often rather useful: sorting by count, a type of sorting that arranges the elements by number of occurrences.
+Instead of -sortIntegers, we will use the universal -sortingType argument.
+The result of sorting by count should be pairs (count, dataEntry) sorted by the count value.
+You can sort using the String.compareTo(String) method or using the comparator.
+To store the input data, you can use MutableMap and MutableList.
+Note that from this stage on, your program focuses on sorting user data, so it will no longer output information about the greatest number or the longest string.
