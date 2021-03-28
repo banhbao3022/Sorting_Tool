@@ -51,7 +51,7 @@ public class argsAnalysis {
                         break;
                     case "-inputFile":
                         if (i + 1 < args.length) {
-                            inputFile = new File("..\\Sorting Tool\\Sorting Tool\\task\\" + args[i + 1]);
+                            inputFile = new File("..\\Sorting_Tool\\Sorting Tool\\task\\" + args[i + 1]);
                             if (!inputFile.exists()){
                                 System.out.println("Input file doesn't exist!");
                             }
@@ -61,7 +61,7 @@ public class argsAnalysis {
                     case "-outputFile":
                         if (i + 1 < args.length) {
                             try {
-                                outputFile = new File("..\\Sorting Tool\\Sorting Tool\\task\\" + args[i + 1]);
+                                outputFile = new File("..\\Sorting_Tool\\Sorting Tool\\task\\" + args[i + 1]);
                                 if (outputFile.createNewFile()) {
                                     System.out.println("Create new output file!");
                                 }
