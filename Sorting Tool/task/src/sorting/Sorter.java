@@ -23,6 +23,7 @@ public class Sorter {
     }
     private void read() {
         if (input == null) {
+            System.out.println("Please type you data:");
             switch (dataType) {
                 case LINE:
                     while (scanner.hasNextLine()) {
@@ -89,7 +90,7 @@ public class Sorter {
             case BY_COUNT:
                 for (String key: sortedLines.keySet()) {
                     double percent = (double)sortedLines.get(key) / lines.size() * 100;
-                    output.append(key + String.format(": %d time(s), %.0f%%\n",sortedLines.get(key), percent));
+                    output.append(key + String.format(": %d time(s), %.2f%%\n",sortedLines.get(key), percent));
                 }
                 break;
         }

@@ -34,9 +34,6 @@ public class argsAnalysis {
                     case "-dataType":
                         if (i + 1 < args.length) {
                             switch (args[i + 1]) {
-                                case "long":
-                                    dataType = DataType.LONG;
-                                    break;
                                 case "line":
                                     dataType = DataType.LINE;
                                     break;
@@ -76,9 +73,7 @@ public class argsAnalysis {
                 }
             } else throw new RuntimeException("Unexpected parameter: " + args[i]);
         }
-        if (inputFile == null && outputFile != null) {
-            throw new RuntimeException("Don't have input file to solve");
-        }
+
         return new Sorter(sortingType,dataType,inputFile,outputFile);
     }
 
